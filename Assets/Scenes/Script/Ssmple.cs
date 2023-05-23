@@ -32,21 +32,6 @@ public class Ssmple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Goal goal;
-        GameObject goalObj = GameObject.Find("Goal(Clone)");
-        if (goalObj != null)
-        {
-            //Debug.Log(goalObj);
-
-            goal = goalObj.GetComponent<Goal>();
-            if (goal != null)
-            {
-                //                Debug.Log(goal.isClear);
-
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             Reset();

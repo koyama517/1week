@@ -14,10 +14,20 @@ public class SceneCange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        Goal goal;
+        GameObject goalObj = GameObject.Find("Goal(Clone)");
+        if (goalObj != null)
         {
-            
-            SceneManager.LoadScene("ClearScene");
+            //Debug.Log(goalObj);
+
+            goal = goalObj.GetComponent<Goal>();
+            if (goal != null)
+            {
+                if (goal.isClear)
+                {
+                    SceneManager.LoadScene("ClearScene");
+                }
+            }
         }
     }
 }

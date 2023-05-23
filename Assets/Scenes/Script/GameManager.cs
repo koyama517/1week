@@ -20,17 +20,19 @@ public class GameManager : MonoBehaviour
 
         CheckGround checkGround;
         GameObject player = GameObject.Find("Player(Clone)");
-        checkGround = player.GetComponent<CheckGround>();
-
-        if (checkGround != null)
+        if (player != null)
         {
-            if (checkGround.isGround)
+            checkGround = player.GetComponent<CheckGround>();
+            if (checkGround != null)
             {
-                canRotate = true;
-            }
-            else
-            {
-                canRotate= false;
+                if (checkGround.isGround)
+                {
+                    canRotate = true;
+                }
+                else
+                {
+                    canRotate = false;
+                }
             }
         }
 
