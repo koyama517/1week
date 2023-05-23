@@ -8,14 +8,27 @@ public class SceneChange2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)){
-            SceneManager.LoadScene("OverScene");
+
+        Player player;
+        GameObject pObj = GameObject.Find("Player(Clone)");
+        if (pObj != null)
+        {
+            //Debug.Log(goalObj);
+
+            player = pObj.GetComponent<Player>();
+            if (player != null)
+            {
+                if (player.isDead)
+                {
+                    SceneManager.LoadScene("OverScene");
+                }
+            }
         }
     }
 }

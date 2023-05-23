@@ -22,11 +22,11 @@ public class Ssmple : MonoBehaviour
     void Start()
     {
         map = Instantiate(mapPrefab);
+        goalBox = Instantiate(GoalPrefab, new Vector3(0, 5.12f, 1), Quaternion.identity);
         player = Instantiate(playerPrefab);
-        box1 = Instantiate(boxPrefab, new Vector3(-5f, -5f, 0), Quaternion.identity);
+        box1 = Instantiate(boxPrefab, new Vector3(-5.12f, -5f, 0), Quaternion.identity);
         box2 = Instantiate(boxPrefab, new Vector3(0, -3f, 0), Quaternion.identity);
-        box3 = Instantiate(boxPrefab, new Vector3(5f, -3f, 0), Quaternion.identity);
-        goalBox = Instantiate(GoalPrefab, new Vector3(0, 5.12f, 0), Quaternion.identity);
+        box3 = Instantiate(boxPrefab, new Vector3(5.12f, -3f, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
