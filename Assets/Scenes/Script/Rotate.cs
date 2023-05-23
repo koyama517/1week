@@ -32,8 +32,8 @@ public class Rotate : MonoBehaviour
 
                 if (!isRotate)
                 {
-                    if (Input.GetKey(KeyCode.D)) { isLeft = false; }
-                    if (Input.GetKey(KeyCode.A)) { isLeft = true; }
+                    if (Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow)) { isLeft = false; }
+                    if (Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.LeftArrow)) { isLeft = true; }
 
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
