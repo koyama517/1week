@@ -46,6 +46,10 @@ public class GameManager : MonoBehaviour
         {
             nowScene = 2;
         }
+        else if(SceneManager.GetActiveScene().name == "Third")
+        {
+            nowScene = 3;
+        }
 
     }
     void Awake()

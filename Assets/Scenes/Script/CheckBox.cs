@@ -8,7 +8,6 @@ public class CheckBox : MonoBehaviour
     private Vector2 direction;
     RaycastHit2D hit;
     public bool isGround;
-    private bool isHit;
     public BoxCollider2D col;
 
     private Vector3 min;
@@ -34,27 +33,18 @@ public class CheckBox : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                isHit = true;
+                isGround = true;
             }
             else
             {
-                isHit = false;
+                isGround = false;
             }
-        }
-
-        if (isHit)
-        {
-            isGround = true;
-        }
-        else
-        {
-            isGround = false;
         }
     }
 
     RaycastHit2D Hit()
     {
-        Vector3 pos = new Vector3(transform.position.x, transform.position.y - transform.localScale.y / 2 - 0.05f, 0);
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y - transform.localScale.y / 2, 2);
         RaycastHit2D resurt = Physics2D.Raycast(pos, direction, 0);
         return resurt;
     }

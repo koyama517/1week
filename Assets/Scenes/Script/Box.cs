@@ -13,6 +13,7 @@ public class Box : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D.gravityScale = 3;
     }
 
     // Update is called once per frame
