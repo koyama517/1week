@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
     public bool canRotate;
+    public int nowScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,14 @@ public class GameManager : MonoBehaviour
                     canRotate = false;
                 }
             }
+        }
+        if (SceneManager.GetActiveScene().name == "first")
+        {
+            nowScene = 1;
+        }
+        else if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            nowScene = 2;
         }
 
     }

@@ -21,7 +21,7 @@ public class Rotate : MonoBehaviour
     void Update()
     {
         GameManager gameManager;
-        GameObject manager = GameObject.Find("GameManager");
+        GameObject manager = GameObject.Find("GameManager(Clone)");
         gameManager = manager.GetComponent<GameManager>();
 
         if (gameManager != null)
