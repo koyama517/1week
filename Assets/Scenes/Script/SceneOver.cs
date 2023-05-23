@@ -31,6 +31,10 @@ public class SceneOver : MonoBehaviour
             {
                 SceneManager.LoadScene("SampleScene");
             }
+            else if (gameManager.nowScene == 3)
+            {
+                SceneManager.LoadScene("Third");
+            }
         }
     }
 }

@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a35ae3498c1e142a4571cc6bb7e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   col: {fileID: 3549017499591463851}
   isDead: 0
 --- !u!114 &-2261742503265824313

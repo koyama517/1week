@@ -33,7 +33,11 @@ public class SceneToTitle : MonoBehaviour
                 }
                 else if (gameManager.nowScene == 2)
                 {
-                    SceneManager.LoadScene("SampleScene");
+                    SceneManager.LoadScene("Third");
+                }
+                else if (gameManager.nowScene == 3)
+                {
+                    SceneManager.LoadScene("TitleScene");
                 }
             }
 
