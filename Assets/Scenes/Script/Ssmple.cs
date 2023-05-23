@@ -12,12 +12,12 @@ public class Ssmple : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instantiate(mapPrefab);
         Instantiate(playerPrefab);
         boxPrefab = Instantiate(boxPrefab, new Vector3(-5f, -5f,0),Quaternion.identity);
         boxPrefab = Instantiate(boxPrefab, new Vector3(0, -3f,0),Quaternion.identity);
         boxPrefab = Instantiate(boxPrefab, new Vector3(5f, -3f, 0), Quaternion.identity);
         GoalPrefab = Instantiate(GoalPrefab, new Vector3(0,5.12f,0), Quaternion.identity);
-        mapPrefab = Instantiate(mapPrefab, new Vector3(0f, 0f, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -36,11 +36,6 @@ public class Ssmple : MonoBehaviour
 //                Debug.Log(goal.isClear);
 
             }
-        }
-
-        if (Input.GetKey(KeyCode.R)) 
-        { 
-        
         }
     }
 }
