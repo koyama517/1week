@@ -38,7 +38,7 @@ public class Rotate : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         isRotate = true;
-                        if (isLeft == false)
+                        if (isLeft)
                         {
                             StartCoroutine(RightRotate());
                         }
