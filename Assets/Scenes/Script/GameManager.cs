@@ -15,11 +15,14 @@ public class GameManager : MonoBehaviour
     public GameObject rPrefab;
     public GameObject aPrefab;
     public GameObject dPrefab;
+    public GameObject rePrefab;
 
     GameObject leftArrow;
     GameObject rightArrow;
     GameObject aButton;
     GameObject dButton;
+    GameObject reButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +65,10 @@ public class GameManager : MonoBehaviour
                 dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
 
             }
+            if (reButton == null)
+            {
+                reButton = Instantiate(rePrefab, new Vector3(14, 0.0f, 0.0f), Quaternion.identity);
+            }
 
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
@@ -96,6 +103,10 @@ public class GameManager : MonoBehaviour
                 dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
 
             }
+            if (reButton == null)
+            {
+                reButton = Instantiate(rePrefab, new Vector3(14, 0.0f, 0.0f), Quaternion.identity);
+            }
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (leftArrow == null)
@@ -127,6 +138,10 @@ public class GameManager : MonoBehaviour
                 aButton = Instantiate(aPrefab, new Vector3(-15.0f, 4.5f, 0.0f), Quaternion.identity);
                 dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
 
+            }
+            if (reButton == null)
+            {
+                reButton = Instantiate(rePrefab, new Vector3(14, 0.0f, 0.0f), Quaternion.identity);
             }
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
