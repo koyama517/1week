@@ -13,9 +13,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject lPrefab;
     public GameObject rPrefab;
+    public GameObject aPrefab;
+    public GameObject dPrefab;
 
     GameObject leftArrow;
     GameObject rightArrow;
+    GameObject aButton;
+    GameObject dButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +56,13 @@ public class GameManager : MonoBehaviour
                 rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
             }
 
+            if(aButton == null && dButton == null) { 
+                
+                aButton = Instantiate(aPrefab, new Vector3(-15.0f,4.5f,0.0f), Quaternion.identity);
+                dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
+
+            }
+
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (leftArrow == null)
@@ -67,6 +78,7 @@ public class GameManager : MonoBehaviour
                     Destroy(leftArrow);
                     rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
+              
             }
         }
         else if (SceneManager.GetActiveScene().name == "SampleScene")
@@ -77,7 +89,13 @@ public class GameManager : MonoBehaviour
             {
                 rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
             }
+            if (aButton == null && dButton == null)
+            {
 
+                aButton = Instantiate(aPrefab, new Vector3(-15.0f, 4.5f, 0.0f), Quaternion.identity);
+                dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
+
+            }
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (leftArrow == null)
@@ -103,7 +121,13 @@ public class GameManager : MonoBehaviour
             {
                 rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
             }
+            if (aButton == null && dButton == null)
+            {
 
+                aButton = Instantiate(aPrefab, new Vector3(-15.0f, 4.5f, 0.0f), Quaternion.identity);
+                dButton = Instantiate(dPrefab, new Vector3(-11.0f, 4.5f, 0.0f), Quaternion.identity);
+
+            }
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (leftArrow == null)

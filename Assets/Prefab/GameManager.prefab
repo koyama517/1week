@@ -48,3 +48,5 @@ MonoBehaviour:
   nowScene: 0
   lPrefab: {fileID: 3971191459587181815, guid: 963ed6c73fc57e84dbe2ffc22ee85379, type: 3}
   rPrefab: {fileID: 2857581329279220957, guid: 2c7c67dece6ccc442a70b961eecae595, type: 3}
+  aPrefab: {fileID: 2247549821919741718, guid: 852ee343820fce741aa7c0bca226d0f4, type: 3}
+  dPrefab: {fileID: 6838616577665058491, guid: 04447e9b4c158784d99fd4a0bc867beb, type: 3}
