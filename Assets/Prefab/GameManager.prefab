@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3ba64d5bbf41c4089acd235c51590a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5214635836073468918, guid: a363f6055833e324fad0c31f2f2f7f7b, type: 3}
+  canRotate: 0
+  nowScene: 0
+  lPrefab: {fileID: 3971191459587181815, guid: 963ed6c73fc57e84dbe2ffc22ee85379, type: 3}
+  rPrefab: {fileID: 2857581329279220957, guid: 2c7c67dece6ccc442a70b961eecae595, type: 3}

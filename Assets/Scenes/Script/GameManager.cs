@@ -10,11 +10,16 @@ public class GameManager : MonoBehaviour
 
     public bool canRotate;
     public int nowScene;
+
+    public GameObject lPrefab;
+    public GameObject rPrefab;
+
+    GameObject leftArrow;
+    GameObject rightArrow;
     // Start is called before the first frame update
     void Start()
     {
 
-       
     }
 
     // Update is called once per frame
@@ -41,16 +46,81 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "first")
         {
             nowScene = 1;
+
+            if (leftArrow == null && rightArrow == null)
+            {
+                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (leftArrow == null)
+                {
+                    Destroy(rightArrow);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                if (rightArrow == null)
+                {
+                    Destroy(leftArrow);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
         }
         else if (SceneManager.GetActiveScene().name == "SampleScene")
         {
             nowScene = 2;
+
+            if (leftArrow == null && rightArrow == null)
+            {
+                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (leftArrow == null)
+                {
+                    Destroy(rightArrow);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                if (rightArrow == null)
+                {
+                    Destroy(leftArrow);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
         }
         else if(SceneManager.GetActiveScene().name == "Third")
         {
             nowScene = 3;
-        }
 
+            if (leftArrow == null && rightArrow == null)
+            {
+                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (leftArrow == null)
+                {
+                    Destroy(rightArrow);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                if (rightArrow == null)
+                {
+                    Destroy(leftArrow);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                }
+            }
+        }
     }
     void Awake()
     {

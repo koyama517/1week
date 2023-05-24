@@ -6,7 +6,7 @@ public class Box : MonoBehaviour
 {
 
     public BoxCollider2D col;
-    
+
     Rigidbody2D rigidbody2D;
 
     // Start is called before the first frame update
@@ -20,12 +20,26 @@ public class Box : MonoBehaviour
     void Update()
     {
 
+        CheckBox checkBox = GetComponent<CheckBox>();
+        if (checkBox.isGround)
+        {
+            col.enabled = true;
+        }
+        else { col.enabled = false; }
+
         Rotate rotate = GetComponent<Rotate>();
         if (!rotate.isRotate)
         {
             //ìñÇΩÇËîªíË
             //èdóÕon
-            rigidbody2D.gravityScale = 5;
+            if (checkBox.isGround)
+            {
+                rigidbody2D.gravityScale = 0;
+            }
+            else
+            {
+                rigidbody2D.gravityScale = 5;
+            }
             rigidbody2D.velocity = new Vector2(0, rigidbody2D.velocity.y);
         }
         else
@@ -37,12 +51,7 @@ public class Box : MonoBehaviour
 
         }
 
-        CheckBox checkBox = GetComponent<CheckBox>();
-        if (checkBox.isGround)
-        {
-            col.enabled = true;
-        }
-        else { col.enabled = false; }
+
 
         //Debug.Log(checkBox.isGround);
     }
