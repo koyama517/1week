@@ -32,14 +32,9 @@ public class Box : MonoBehaviour
         {
             //ìñÇΩÇËîªíË
             //èdóÕon
-            if (checkBox.isGround)
-            {
-                rigidbody2D.gravityScale = 0;
-            }
-            else
-            {
-                rigidbody2D.gravityScale = 5;
-            }
+
+            rigidbody2D.gravityScale = 5;
+
             rigidbody2D.velocity = new Vector2(0, rigidbody2D.velocity.y);
         }
         else
@@ -51,7 +46,7 @@ public class Box : MonoBehaviour
 
         }
 
-
+        //âÒì]ëqå…
 
         //Debug.Log(checkBox.isGround);
     }

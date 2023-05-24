@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 
             if (leftArrow == null && rightArrow == null)
             {
-                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
             }
 
             if(aButton == null && dButton == null) { 
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
                 if (leftArrow == null)
                 {
                     Destroy(rightArrow);
-                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
             }
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
                 if (rightArrow == null)
                 {
                     Destroy(leftArrow);
-                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
               
             }
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
 
             if (leftArrow == null && rightArrow == null)
             {
-                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
             }
             if (aButton == null && dButton == null)
             {
@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour
                 if (leftArrow == null)
                 {
                     Destroy(rightArrow);
-                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
             }
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
                 if (rightArrow == null)
                 {
                     Destroy(leftArrow);
-                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
             }
         }
@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
 
             if (leftArrow == null && rightArrow == null)
             {
-                rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
             }
             if (aButton == null && dButton == null)
             {
@@ -148,7 +148,7 @@ public class GameManager : MonoBehaviour
                 if (leftArrow == null)
                 {
                     Destroy(rightArrow);
-                    leftArrow = Instantiate(lPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    leftArrow = Instantiate(lPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
             }
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
                 if (rightArrow == null)
                 {
                     Destroy(leftArrow);
-                    rightArrow = Instantiate(rPrefab, new Vector3(-12.0f, -4.5f, 0.0f), Quaternion.identity);
+                    rightArrow = Instantiate(rPrefab, new Vector3(-13.0f, -4.5f, 0.0f), Quaternion.identity);
                 }
             }
         }
